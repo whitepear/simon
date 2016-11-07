@@ -1,0 +1,243 @@
+html {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+body {
+	min-height: 100%;
+	background: url(simon_wood.jpg);	
+	overflow-y: hidden;
+}
+
+.incon {
+	font-family: 'Inconsolata', Arial;
+}
+
+.container {
+	margin: 50px auto 0px;
+	width: 500px;
+	text-align: center;
+	position: relative;
+}
+
+.topRow {
+	position: relative;
+	top: 5px;
+}
+
+.segment {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 20px solid #333;	
+	pointer-events: none;
+}
+
+.segment:hover {
+	cursor: pointer;
+}
+
+
+.green {
+	background: #66cd00;
+	border-top-left-radius: 100%;
+	position: relative;
+	left: 3px;
+	border-bottom: 10px solid #333;
+	border-right: 10px solid #333;
+}
+
+.green:active {
+	box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.greenBright {
+	background: #9DE950;
+}
+
+.red {
+	background: #cd2626;
+	border-top-right-radius: 100%;
+	position: relative;
+	right: 3px;
+	border-bottom: 10px solid #333;
+	border-left: 10px solid #333;
+}
+
+.red:active {
+	box-shadow: inset -5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.redBright {
+	background: #FF8181;
+}
+
+.yellow {
+	background: #eeb422;
+	border-bottom-left-radius: 100%;
+	position: relative;
+	left: 3px;
+	border-top: 10px solid #333;
+	border-right: 10px solid #333;
+}
+
+.yellow:active {
+	box-shadow: inset 5px -5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.yellowBright {
+	background: #FFD977;
+}
+
+.blue {
+	background: #436eee;
+	border-bottom-right-radius: 100%;
+	position: relative;
+	right: 3px;
+	border-top: 10px solid #333;
+	border-left: 10px solid #333;
+}
+
+.blue:active {
+	box-shadow: inset -5px -5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.blueBright {
+	background: #93ACF6;
+}
+
+.centerPiece {
+	position: absolute;
+	border: 12px solid #333;
+	width: 230px;
+	height: 230px;
+	background: white;
+	top: 105px;
+	left: 120px;
+	border-radius: 50%;	
+}
+
+.brand {
+	font-size: 60px;
+	font-weight: bold;	
+	position: relative;
+	bottom: 40px;
+	margin-bottom: 0px;
+}
+
+span {
+	font-size: 25px;
+	position: absolute;
+	top: 30px;
+	font-weight: bold;
+}
+
+.controlWrap {
+	position: relative;
+	bottom: 25px;	
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.countWrap {
+	display: inline-block;
+	width: 60px;	
+}
+
+.countDisplay {
+	height: 32px;
+	width: 50px;
+	background: #580101;
+	margin: 0 auto;
+	border: 4px solid #333;
+	border-radius: 7px;
+	color: #801515;
+}
+
+.startWrap {
+	display: inline-block;	
+	width: 60px;	
+}
+
+.startBtn {
+	position: relative;
+	border: 4px solid #333;
+	background: red;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin-bottom: 3px;
+	box-shadow: 0px 2px 3px #222; 
+}
+
+.startBtn:active {
+	top: 2px;
+	box-shadow: 0px 0px 0px transparent;
+}
+
+.strictWrap {
+	display: inline-block;	
+	width: 60px;	
+}
+
+#strictLED {
+	width: 7px;
+	height: 7px;
+	border: 2px solid #333;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.strictBtn {
+	position: relative;
+	border: 4px solid #333;
+	background: yellow;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin-bottom: 3px;
+	box-shadow: 0px 2px 3px #222;
+}
+
+.strictBtn:active {
+	top: 2px;
+	box-shadow: 0px 0px 0px transparent;
+}
+
+.powerWrap {
+	position: relative;
+	bottom: 8px;
+}
+
+.powerWrap div {
+	display: inline;
+	font-size: 17px;
+}
+
+#powerSwitchWrap {
+	width: 50px;
+	height: 20px;
+	display: inline-block;
+	background: #222;
+	position: relative;
+	top: 2px;
+	border: 2px solid #333;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#powerSwitch {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background: skyblue;
+}
+
+/* Extra Small Styles */
+@media (max-width: 767px) {
+	.container {
+		margin-top: 15px;
+	}
+}

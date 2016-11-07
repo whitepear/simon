@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simon</title>
+	<meta name="description" content="Simon Game">	
+
+ 	<!-- Normalize CSS -->
+ 	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+ 	<!-- Ensures proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 	<!-- Inconsolata Font -->
+ 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	
+	<!-- Custom CSS -->
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="simonWrapper">
+			<div class="topRow">
+				<div class="segment green"></div>
+				<div class="segment red"></div>
+			</div>
+			<div class="bottomRow">
+				<div class="segment yellow"></div>
+				<div class="segment blue"></div>
+			</div>
+			<div class="centerPiece">
+				<p class="brand incon">Simon<span>&reg;</span></p>
+				<div class="controlWrap incon">
+					<div class="countWrap">
+						<h1 class="countDisplay">--</h1>
+						<div class="countTag">Count</div>
+					</div>
+					<div class="startWrap">
+						<button type="button" class="startBtn"></button>
+						<div class="startTag">Start</div>
+					</div>
+					<div class="strictWrap">
+						<div id="strictLED"></div>
+						<button type="button" class="strictBtn"></button>
+						<div class="strictTag">Strict</div>
+					</div>
+				</div>
+				<div class="powerWrap incon">
+					<div>Off</div>
+					<div id="powerSwitchWrap">
+						<div id="powerSwitch"></div>
+					</div>
+					<div>On</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+</body>
+</html>
